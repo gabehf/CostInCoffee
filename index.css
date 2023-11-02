@@ -1,0 +1,121 @@
+:root {
+    --text-color: #433e3f;
+    --text-light: #585355;
+    --main-bg: #F5F5F5;
+    --cream-light: #F2EAD3;
+    --cream: #DFD7BF;
+    --brown: #3F2305;
+    --brown-light: #52391e;
+    --blue: #05213f;
+    --red: #EF3E36;
+    --green: #08670a;
+    --green-light: #217623;
+    --purple: #750973;
+}
+
+body {
+    background-color: var(--main-bg);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 575px;
+    margin-bottom: 35px;
+}
+
+h1 {
+    font-family: 'Orelega One', serif;
+    color: var(--brown);
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+h2 {
+    font-family: 'Orelega One', serif;
+    font-weight: normal;
+    font-size: 32px;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 0rem;
+}
+
+button {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0.5rem 0.7rem 0.2rem 0.7rem; /* spacing is so weird with this font */
+    border: none;
+    border: 3px solid var(--brown);
+    color: var(--brown);
+    border-radius: 8px;
+    font-size: 16px;
+}
+button:hover {
+    background-color: var(--brown);
+    cursor: pointer;
+    color: var(--main-bg)
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.result p {
+    margin: 2px;
+}
+
+#coffee-count {
+    font-family: 'Orelega One', serif;
+    color: var(--brown);
+    font-size: 96px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 25px;
+    width: 240px;
+    margin: 10px auto;
+}
+
+.cost-display {
+    color: var(--green);
+}
+
+.subscriptions {
+    width: 400px;
+}
+
+.subscription-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid var(--text-light);
+    padding-bottom: 0.5rem;
+}
+.subscription-header p {
+    margin: 3px 0px;
+}
+
+.sub-item-container:nth-child(odd)  {
+    background-color: white;
+}
+
+.sub-item {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: auto;
+}
