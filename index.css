@@ -16,14 +16,14 @@
 body {
     background-color: var(--main-bg);
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--text-color);
 }
 
 .container {
     width: 800px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +37,7 @@ body {
 h1 {
     font-family: 'Orelega One', serif;
     color: var(--brown);
-    font-size: 64px;
+    font-size: 56px;
     text-align: center;
     margin-bottom: 0rem;
 }
@@ -45,7 +45,7 @@ h1 {
 h2 {
     font-family: 'Orelega One', serif;
     font-weight: normal;
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
     color: var(--text-color);
     margin-top: 0rem;
@@ -58,7 +58,7 @@ button {
     border: 3px solid var(--brown);
     color: var(--brown);
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 14px;
 }
 button:hover {
     background-color: var(--brown);
@@ -89,7 +89,7 @@ button:hover {
     margin: 10px auto;
 }
 
-.cost-display {
+#cost-display {
     color: var(--green);
 }
 
@@ -97,15 +97,21 @@ button:hover {
     width: 400px;
 }
 
-.subscription-header {
+#subscription-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     border-bottom: 2px solid var(--text-light);
     padding-bottom: 0.5rem;
 }
-.subscription-header p {
+#subscription-header p {
     margin: 3px 0px;
+}
+
+.no-subs-text {
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
 }
 
 .sub-item-container:nth-child(odd)  {
@@ -116,6 +122,61 @@ button:hover {
     width: 350px;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 16px;
     margin: auto;
+}
+
+#add-sub-form * {
+    margin: 5px 0px;
+}
+
+#add-sub-form button {
+    height: 38px;
+    margin-top: 4px;
+    padding-top: 0px;
+    background-color: var(--green);
+    color: #fff;
+    border: none;
+}
+#add-sub-form button:hover {
+    background-color: var(--green-light);
+}
+
+input {
+    border: 1px solid var(--brown);
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px 0px 6px 1em;
+    padding-left: 1em;
+    font-size: 16px;
+}
+input:focus {
+    outline: none;
+    border: 2px solid var(--brown);
+}
+
+#subPrice {
+    width: 55px;
+}
+
+.ui-autocomplete {
+    background-color: white;
+    font-size: 16px;
+    list-style: none;
+    width: 125px;
+    border: 2px solid var(--brown);
+    border-radius: 5px;
+    padding: 0px;
+}
+.ui-autocomplete li {
+    padding: 10px 25px;
+}
+.ui-autocomplete li:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
+.ui-helper-hidden-accessible { display:none; }
+
+.error {
+    border: 2px solid var(--red);
 }

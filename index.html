@@ -6,6 +6,16 @@
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+        crossorigin="anonymous">
+    </script>
     <title>Cost in Coffee</title>
     <link rel="stylesheet" href="index.css" />
 </head>
@@ -17,41 +27,26 @@
         </div>
         <div class="result">
             <p>Your subscriptions are equivalent to</p>
-            <div id="coffee-count">5.21</div>
+            <div id="coffee-count">0.00</div>
             <p>cups of coffee a day.</p>
-            <p>That's <span class="cost-display">$11.54</span> of coffee.</p>
+            <p>That's <span id="cost-display">$0.00</span> of coffee.</p>
         </div>
         <div class="subscriptions">
-            <div class="subscription-header">
+            <div id="subscription-header">
                 <p>Your Subscriptions</p>
-                <button type="button">Add</button>
+                <button type="button" id="addSubButton">Add</button>
             </div>
-            <div class="sub-item-container">
-                <div class="sub-item">
-                    <p>LinkedIn</p>
-                    <p>$40.00</p>
-                </div>
+            <div class="add-sub-item-container" id="addSubFormContainer" hidden>
+                <form action="none" id="add-sub-form" class="sub-item">
+                    <input type="text" name="subName" id="subName" placeholder="Subscription">
+                    <input type="text" name="subPrice" id="subPrice" placeholder="$0.00">
+                    <button type="button" id="confirmSubButton">✓</button>
+                </form>
             </div>
-            <div class="sub-item-container">
-                <div class="sub-item">
-                    <p>Youtube Premium</p>
-                    <p>$12.00</p>
-                </div>
-            </div>
-            <div class="sub-item-container">
-                <div class="sub-item">
-                    <p>Netflix</p>
-                    <p>$15.00</p>
-                </div>
-            </div>
-            <div class="sub-item-container">
-                <div class="sub-item">
-                    <p>Crunchyroll</p>
-                    <p>$10.00</p>
-                </div>
-            </div>
-            <!-- <p>Start adding subscriptions and see the costs rise.</p> -->
+            <p class="no-subs-text">Start adding subscriptions and see the costs rise.</p>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
