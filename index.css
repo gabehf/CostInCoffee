@@ -30,6 +30,10 @@ body {
     align-items: center;
 }
 
+.preface {
+    text-align: center;
+}
+
 .header {
     width: 575px;
     margin-bottom: 35px;
@@ -218,4 +222,81 @@ input:focus {
 .footer a {
     font-style: italic;
     color: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+body {
+    background-color: var(--main-bg);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 95%;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: 'Orelega One', serif;
+    color: var(--brown);
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+h2 {
+    font-family: 'Orelega One', serif;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 0rem;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#coffee-count {
+    font-size: 76px;
+    padding: 0.6rem;
+    width: 200px;
+}
+/* 
+#subscriptions {
+    width: 350px;
+}
+
+.sub-item {
+    width: 300px;
+    font-size: 14px;
+} */
+
+.del-sub-button {
+    background-color: var(--red);
+    color: var(--main-bg);
+    border: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 0px;
+    position: absolute;
+    right: -40px;
+    top: 0px;
+}
+
 }
