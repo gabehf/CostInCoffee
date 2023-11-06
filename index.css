@@ -8,6 +8,7 @@
     --brown-light: #52391e;
     --blue: #05213f;
     --red: #EF3E36;
+    --red-dark: #d73831;
     --green: #08670a;
     --green-light: #217623;
     --purple: #750973;
@@ -93,7 +94,7 @@ button:hover {
     color: var(--green);
 }
 
-.subscriptions {
+#subscriptions {
     width: 400px;
 }
 
@@ -109,6 +110,7 @@ button:hover {
 }
 
 .no-subs-text {
+    color: var(--text-light);
     font-style: italic;
     font-size: 16px;
     text-align: center;
@@ -117,6 +119,10 @@ button:hover {
 .sub-item-container:nth-child(odd)  {
     background-color: white;
 }
+.sub-item-container {
+    overflow-x:hidden;
+    position: relative;
+}
 
 .sub-item {
     width: 350px;
@@ -124,6 +130,21 @@ button:hover {
     justify-content: space-between;
     font-size: 16px;
     margin: auto;
+}
+
+.del-sub-button {
+    background-color: var(--red);
+    color: var(--main-bg);
+    border: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 0px;
+    position: absolute;
+    right: -40px;
+    top: 0px;
+}
+.del-sub-button:hover {
+    background-color: var(--red-dark);
 }
 
 #add-sub-form * {
@@ -158,6 +179,9 @@ input:focus {
 #subPrice {
     width: 55px;
 }
+#subName {
+    width: 200px;
+}
 
 .ui-autocomplete {
     background-color: white;
@@ -169,7 +193,7 @@ input:focus {
     padding: 0px;
 }
 .ui-autocomplete li {
-    padding: 10px 25px;
+    padding: 10px 0px 8px 25px;
 }
 .ui-autocomplete li:hover {
     cursor: pointer;
@@ -179,4 +203,19 @@ input:focus {
 
 .error {
     border: 2px solid var(--red);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.footer a {
+    font-style: italic;
+    color: inherit;
 }

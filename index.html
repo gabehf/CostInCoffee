@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&family=Orelega+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Orelega+One&display=swap');
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +21,11 @@
 </head>
 <body>
     <div class="container">
+        <div class="preface">
+            So often you see in ads that their subscription is just <i>the price of a coffee a week</i>
+            or something similar. So just how many coffees a day are you really spending on all these 
+            subscriptions?
+        </div>
         <div class="header">
             <h1>Cost in Coffee</h1>
             <h2>See the true cost of your subscriptions in terms of cups of coffee a day.</h2>
@@ -31,7 +36,7 @@
             <p>cups of coffee a day.</p>
             <p>That's <span id="cost-display">$0.00</span> of coffee.</p>
         </div>
-        <div class="subscriptions">
+        <div id="subscriptions">
             <div id="subscription-header">
                 <p>Your Subscriptions</p>
                 <button type="button" id="addSubButton">Add</button>
@@ -45,6 +50,11 @@
             </div>
             <p class="no-subs-text">Start adding subscriptions and see the costs rise.</p>
         </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy;2023 Gabe Farrell</p>
+        <a href="https://github.com/gabehf/CostInCoffee">View the source on GitHub</a>
     </div>
 
     <script src="main.js"></script>
